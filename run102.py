@@ -350,7 +350,7 @@ def measure_stretch_move(requesters, owner, leader_map, G, weight=None, trace=Tr
 # ---------------------------- GRAPH LOADING ----------------------------
 
 def load_graph(dfile):
-    G = nx.read_graphml(os.path.join("graphs","grid",dfile))
+    G = nx.read_graphml(os.path.join("graphs","small_world",dfile))
     return nx.relabel_nodes(G, lambda x:int(x))
 
 # ---------------------------- ERRORS & HELPERS ----------------------------
